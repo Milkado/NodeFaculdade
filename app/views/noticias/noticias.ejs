@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todas as Noticias</h1>
+
+    <table>
+        <tr>
+            <th>Titulo</th>
+            <th>Notícia</th>
+            <th>Data Criação</th>
+            <th>Ações</th>
+        </tr>
+        <%noticias.forEach(noticia => { %>
+            <tr>
+                <td><a href='/noticia?id=<%=noticia._id%>'><%=noticia.titulo%></a></td>
+                <td><%=noticia.noticia%></td>
+                <td><%=noticia.data_criacao%></td>
+                <td><a href='/noticias/excluir?id=<%=noticia._id%>'>Excluir</a></td>
+                <td>Alterar</td>
+            </tr>
+        <%})%>
+    </table>
+
+
+</body>
+
+  
+</html>

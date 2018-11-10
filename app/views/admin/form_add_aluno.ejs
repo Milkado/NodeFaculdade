@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Adicionar Aluno</h1>
+    <br>
+
+    <form action="/alunos/salvar" method="post">
+        <label>Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome do Aluno" />
+        <br />
+        <label>Rua</label>
+        <textarea id="rua" name="rua" rows="5" cols="30"></textarea>
+        <br />
+        <label>Bairro</label>
+        <input type="text" id="bairro" name="bairro" placeholder="Bairro do Aluno" />
+        <br />
+        <label>Cidade</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Cidade" />
+        <br />
+        <label>Estado</label>
+        <input type="text" id="estado" name="estado" placeholder="Estado" />
+        <br />
+        <label>E-mail</label>
+        <input type="text" id="email" name="email" placeholder="E-mail" />
+        <br />
+        <label>Telefone</label>
+        <input type="text" id="telefone" name="telefone" placeholder="Telefone" />
+        <br />
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+</html>
