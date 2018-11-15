@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h1>Notícia Individual</h1>
+        <table>
+            <tr>
+            <th>Prduto</th>
+            <th>Quantidade</th>
+            <th>Valor Unitário</th>
+            <th>Unidade</th>
+            <th>Grupo</th>
+            <th>Localização</th>
+            
+            </tr>
+            <%produtos.forEach(produto => { %>
+                <tr>
+                    <td><%=produto.produto%></td>
+                    <td><%=produto.quantidade%></td>
+                    <td>R$<%=produto.valor_unitario%></td>
+                    <td><%=produto.unidade%></td>
+                    <td><%=produto.grupo%></td>
+                    <td><%=produto.localizacao%></td>
+                </tr>
+            <%})%>
+        </table>
+    </body>
+</body>
+</html>
