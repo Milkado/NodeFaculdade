@@ -2,7 +2,7 @@ const mongoClient = require('mongodb').MongoClient
 const ObjectID = require('mongodb').ObjectID
 const servidor = 'localhost';
 const porta = 27017;
-const banco = 'portal_noticias';
+const banco = 'bdfuncionarios';
 
 class DBConnection {
 
